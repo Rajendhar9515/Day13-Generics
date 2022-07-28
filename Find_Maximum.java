@@ -15,4 +15,16 @@ public class Find_Maximum {
 		}
 	}
 
+	// Method with parameters as Float
+	public void floatMax(Float num1, Float num2, Float num3) {
+
+		// comparing numbers using compareTo method.
+		if (num1.compareTo(num2) > 0 && num1.compareTo(num3) > 0) {
+			System.out.println("\n\nTC-1.1 :- " + num1 + " is maximum.");
+		} else if (num2.compareTo(num1) > 0 && num2.compareTo(num3) > 0) {
+			System.out.println("\nTC-1.2 :- " + num2 + " is maximum.");
+		} else {
+			System.out.println("\nTC-1.3 :- " + num3 + " is maximum.");
+		}
+	}
 }
