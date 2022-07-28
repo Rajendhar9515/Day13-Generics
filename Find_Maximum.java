@@ -1,12 +1,24 @@
 package com.bridgelabz.generics;
 
-public class Find_Maximum {
-	
+// Generic class 
+public class Find_Maximum<T extends Comparable<T>> {
+
+	// Constant variables
+	private final T VAR1;
+	private final T VAR2;
+	private final T VAR3;
+
+	// Constructor
+	public Find_Maximum(T var1, T var2, T var3) {
+		this.VAR1 = var1;
+		this.VAR2 = var2;
+		this.VAR3 = var3;
+	}
+
 	// Method by using generic
-	public <T extends Comparable<T>> T findMax(T var1, T var2, T var3) {
+	public static <T extends Comparable<T>> T testMaximum(T var1, T var2, T var3) {
 
 		T max = var3;
-
 		// comparing numbers using compareTo method.
 		if (var1.compareTo(var2) > 0 && var1.compareTo(max) > 0) {
 			max = var1;
