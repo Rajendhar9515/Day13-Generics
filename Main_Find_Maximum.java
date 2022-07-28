@@ -19,5 +19,10 @@ public class Main_Find_Maximum {
 		object.floatMax(15.5f, 12.8f, 9.56f);
 		object.floatMax(12.4f, 25.8f, 15.7f);
 		object.floatMax(14.2f, 18.7f, 28.9f);
+
+		/** Test cases for Strings. **/
+		object.stringMax("Raj", "Ajay", "Pavan");
+		object.stringMax("Car", "Cycle", "Bike");
+		object.stringMax("Bat", "Ball", "Wickets");
 	}
 }

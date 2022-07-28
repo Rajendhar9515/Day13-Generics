@@ -27,4 +27,17 @@ public class Find_Maximum {
 			System.out.println("\nTC-1.3 :- " + num3 + " is maximum.");
 		}
 	}
+
+	// Method with parameters as String
+	public void stringMax(String S1, String S2, String S3) {
+
+		// comparing numbers using compareTo method.
+		if (S1.compareTo(S2) > 0 && S1.compareTo(S3) > 0) {
+			System.out.println("\n\nTC-1.1 :- " + S1 + " is maximum.");
+		} else if (S2.compareTo(S1) > 0 && S2.compareTo(S3) > 0) {
+			System.out.println("\nTC-1.2 :- " + S2 + " is maximum.");
+		} else {
+			System.out.println("\nTC-1.3 :- " + S3 + " is maximum.");
+		}
+	}
 }
